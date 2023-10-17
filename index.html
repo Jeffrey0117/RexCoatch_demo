@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>瑞氏教練｜拳擊｜重訓｜增肌減脂｜團課｜一對一教學｜歡迎私訊</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <style>
+    html {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    .video {
+      width: 100vw;
+      height: calc(100vh);
+      object-fit: cover;
+      object-position: center 10%;
+      filter: grayscale(100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .big-text {
+      position: absolute;
+      top: 43%;
+      font-weight: 900;
+      line-height: 70px;
+      text-shadow: 0px 1px, 1px 0px, 1px 1px;
+      letter-spacing: 2px;
+    }
+
+    .big-text p {
+      font-size: 70px;
+    }
+
+    .message-btn {
+      width: 140px;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
+
+    .count-nav {
+      padding: 8px 0;
+      text-align: center;
+      filter: brightness(110%);
+    }
+
+    .text-secondary {
+      color: rgb(88, 88, 91) !important;
+      font-size: 24px;
+      font-weight: 500;
+      background: linear-gradient(120deg, #e7fa6e 0%, #e7fa6e 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 65%;
+      background-position: 0 50%;
+      text-shadow: 0 0 3px white;
+      line-height: 24px;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0px;
+      z-index: 99;
+      color: black;
+      font-size: 15.5px;
+      letter-spacing: 0.03em;
+      box-shadow: 0 4px 10px -2px black;
+    }
+
+    .count-nav {
+      font-size: 18px;
+    }
+
+    .navbar-brand {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+
+    .nav-item {
+      margin-left: 15px;
+    }
+
+    .text-secondary,
+    .message-btn {
+      margin-top: -50px;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .why-text {
+      margin-bottom: 50px;
+    }
+    .why-text p {
+      font-size: 16px;
+      line-height: 10px;
+    }
+
+    .why-text h1 {
+      font-weight: 900;
+      font-size: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .sell-img {
+      height: 300px;
+      width: 100vw;
+      object-fit: cover;
+      object-position: 100% 70%;
+      position: relative;
+    }
+
+    .free-article img {
+      width: 30vw;
+      height: 60vh;
+    }
+
+    .sell-text {
+      position: absolute;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .sell-btn {
+      margin-top: 30px;
+      padding: 15px 25px;
+      font-size: 20px;
+    }
+
+    .whatIdo {
+      background-color: rgb(168, 161, 150);
+      margin-top: -7px;
+      margin-bottom: 50px;
+    }
+    .whatIdo i {
+      font-size: 50px;
+      color: rgb(249, 105, 105);
+      margin-bottom: 5px;
+    }
+
+    .what-card {
+      color: black;
+    }
+
+    .face-img {
+      border-radius: 50%;
+      border: 5px solid rgb(230, 36, 36);
+    }
+
+    .person-text {
+      padding: 10px;
+    }
+    .person-text h4 {
+      font-size: 35px;
+      margin-bottom: 40px;
+    }
+
+    .person-text p {
+      font-size: 20px;
+    }
+
+    /* 套用見證板塊 */
+    @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+    .snip1533 {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+      color: #9e9e9e;
+      display: inline-block;
+      font-family: "Roboto", Arial, sans-serif;
+      font-size: 16px;
+      margin: 35px 10px 10px;
+      max-width: 310px;
+      min-width: 250px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 5px;
+      border-top: 5px solid #d2652d;
+    }
+
+    .snip1533 *,
+    .snip1533 *:before {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.1s ease-out;
+      transition: all 0.1s ease-out;
+    }
+
+    .snip1533 figcaption {
+      padding: 13% 10% 12%;
+    }
+
+    .snip1533 figcaption:before {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      color: #d2652d;
+      content: "\f10e";
+      font-family: "FontAwesome";
+      font-size: 32px;
+      font-style: normal;
+      left: 50%;
+      line-height: 60px;
+      position: absolute;
+      top: -30px;
+      width: 60px;
+    }
+
+    .snip1533 h3 {
+      color: #3c3c3c;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 24px;
+      margin: 10px 0 5px;
+    }
+
+    .snip1533 h4 {
+      font-weight: 400;
+      margin: 0;
+      opacity: 0.5;
+    }
+
+    .snip1533 blockquote {
+      font-style: italic;
+      font-weight: 300;
+      margin: 0 0 20px;
+    }
+
+    /* 套用見證板塊結束 */
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    li {
+      list-style: none;
+    }
+
+    footer {
+      background-color: rgb(66, 66, 66);
+      color: white;
+    }
+
+    .foot-link li {
+      margin-right: 20px;
+    }
+
+    .tryouts {
+      right: 26px;
+      bottom: 138px;
+      display: inline-block;
+    }
+
+    .fbmessenger {
+      right: 27px;
+      bottom: 66px;
+      display: inline-block;
+    }
+
+    .fixed {
+      position: fixed;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-icon i {
+      font-size: 30px;
+      border: 2px solid;
+      border-radius: 15%;
+      padding: 5px 15px;
+      color: white;
+    }
+
+    .side-icon span {
+      font-size: 12.5px;
+      letter-spacing: 2px;
+      text-shadow: 0.5px 0.5px 15px black;
+    }
+
+    .fa-bolt {
+      background-color: rgb(92, 173, 255);
+    }
+
+    .fa-pencil {
+      background-color: rgb(210, 10, 10);
+    }
+  </style>
+  <body>
+    <!-- 側邊連結欄開始 -->
+    <div class="side-icon">
+      <div class="tryouts fixed">
+        <i class="fa-solid fa-pencil"></i>
+        <a
+          class="btn-circle appointment-btn"
+          href="/appointments/new"
+          onclick="ga('send', 'event', [booking_tryouts], [click], [event_tracking_label], [fieldsObject]);"
+          target="_self"
+          title="預約體驗"
+          ><span class="text">預約體驗</span></a
+        >
+      </div>
+      <div class="fbmessenger fixed">
+        <i class="fa-solid fa-bolt"></i>
+        <a
+          class="btn-circle customer-service-fb"
+          href="https://m.me/UFCGYMTaiwan"
+          target="_blank"
+          title="Facebook Messenger 即時通訊"
+          ><span class="text">私訊瑞氏</span></a
+        >
+      </div>
+    </div>
+    <!-- 側邊連結欄結束 -->
+    <!-- 優惠條列訊息開始 -->
+    <div class="container-fluid count-nav bg-danger">
+      <div class="row">
+        <div class="col text-white">
+          🔥 🔥 🔥 八堂團體拳擊課程，現正優惠中！🔥 🔥 🔥
+        </div>
+      </div>
+    </div>
+    <!-- 優惠條列訊息結束 -->
+    <!-- 導覽列開始 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> 瑞氏教練</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">關於瑞氏教練</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">教學內容</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">好評推薦</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">預約體驗</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 導覽列結束 -->
+    <!-- 英雄區塊開始 -->
+    <video
+      loop
+      autoplay
+      muted
+      class="video"
+      src="Snapinsta.app_video_357658306_122742574188654_8957591211486887292_n.mp4"
+    ></video>
+    <div class="container hero-section">
+      <div class="row">
+        <div class="col big-text">
+          <p class="text-white">※訓練</p>
+          <p class="text-danger">才能超越極限！</p>
+          <span class="text-secondary">瑞氏教練只「給你專業」</span><br />
+
+          <button type="button" class="btn btn-danger message-btn">
+            立即了解
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 英雄區塊結束 -->
+
+    <!-- 介紹頁面區塊開始 -->
+    <div class="container-fluid why-text">
+      <div class="row center-text">
+        <h1>為什麼要找教練？</h1>
+        <p>《原子習慣》告訴我們：「一個習慣的培養要藉由環境影響！」</p>
+        <p>《刻意練習》說：「每一次練習，都要打破舒適圈才有效！」</p>
+        <br /><br />
+        <p>
+          找教練可以修正自己的動作，能夠有效的學到正確的運動方法、提高強度、加速自己的成長曲線。
+        </p>
+        <p>幫助你累積變強壯過程的基石，讓你變成你想要的樣子。</p>
+        <p>成為那個你想要成為的拳擊手、獲得那樣你想要獲得的精實體態！</p>
+      </div>
+      <div class="row center-text">
+        <h1>關於瑞氏教練</h1>
+        <p></p>
+      </div>
+      <div class="row">
+        <div class="col-6 center-text">
+          <img
+            class="face-img"
+            src="https://i.imgur.com/ObgPni9.jpg"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <div class="person-text">
+            <h4>瑞氏教練</h4>
+            <p>拳擊教練，在TMMA學習已經5年，具備團體課程資歷</p>
+            <p>，喜歡研究各種選手的風格</p>
+            <p>除了健身以外還會薩克斯風，是被樂器耽誤的健身教練XD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 介紹頁面區塊結束 -->
+
+    <!-- 三欄介紹區塊開始 -->
+
+    <div class="whatIdo" data-aos="fade-up">
+      <div class="container d-flex align-items-center flex-column">
+        <div class="row g-3 mt-5 mb-3">
+          <div class="col-12 col-xl-4">
+            <div class="what-card shadow p-3 mb-5 bg-body rounded text-center">
+              <i class="fa-solid fa-dumbbell"></i>
+              <h3>一對一課程</h3>
+              <p>
+                一對一私人教練，設計專屬於你的菜單與課表，可以針對你的弱點強化。
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="what-card shadow p-3 mb-5 bg-body rounded text-center">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>團體課程</h3>
+              <p>
+                小班制的團體拳擊課程，可以認識新朋友、成為訓練夥伴，一起磨練拳擊技術。
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-xl-4">
+            <div class="what-card shadow p-3 mb-5 bg-body rounded text-center">
+              <i class="fa-solid fa-table"></i>
+              <h3>線上增肌減脂</h3>
+              <p>
+                提供飲食指導方針，訓練動作檢視，以及觀念上重新塑造你訓練的強度與效率。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 三欄介紹區塊結束 -->
+
+    <!-- 好評推薦區塊開始 -->
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-12 why-text text-center"><h1>好評推薦</h1></div>
+      </div>
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>
+                  原本只是體驗一堂拳擊課，結果因為有趣的腳步以及反擊練習，對拳擊上癮了！
+                </p>
+              </blockquote>
+              <h3>24歲 男性</h3>
+              <h4>小小工程師</h4>
+            </figcaption>
+          </figure>
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>團體課程的拳擊對練超級紓壓！非常推薦～</p>
+              </blockquote>
+              <h3>28歲 女性</h3>
+              <h4>平常公務員</h4>
+            </figcaption>
+          </figure>
+          <figure class="snip1533">
+            <figcaption>
+              <blockquote>
+                <p>
+                  教練幫我安排重訓跟飲食的推薦，雖然很辛苦，可是讓我重新得到了更健康的體態，也更好看了。真的很感謝REX教練，指導上非常細心風格也很有趣！
+                </p>
+              </blockquote>
+              <h3>20歲 男性</h3>
+              <h4>淡江大三俄語系</h4>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <!-- 好評推薦區塊結束 -->
+    <!-- 促銷版面區塊開始 -->
+    <div class="container-fluid mt-3">
+      <div class="row d-flex align-items-center">
+        <img
+          class="sell-img"
+          src="https://i.imgur.com/ZaO7gDk.png"
+          alt=""
+          referrerpolicy="no-referrer"
+        />
+        <div class="sell-text center-text">
+          <h1>七月限時，免費拳擊體驗課！</h1>
+          <h3>讓瑞式帶你走進拳擊的世界</h3>
+          <h5>基本腳步、刺拳直拳、以及基本閃躲技巧</h5>
+          <button type="button" class="btn btn-danger sell-btn">
+            點我領取
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 促銷版面區塊結束 -->
+
+    <!-- 教學文章區塊開始 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 why-text text-center"><h1>免費教學解析</h1></div>
+      </div>
+      <div class="row free-article p-3">
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/HKpYUzE.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">假動作上勾拳</h3>
+          <p>
+            墨西哥拳王Canelo Alvarez
+            經典的假動作勾拳，利用誇張的手臂擺動，吸引防守的同時增加身體旋轉，增加勾拳的力量。
+          </p>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/5LOWuT9.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">爆肝拳set-up</h3>
+          <p>
+            身體攻擊有別於頭部的攻擊，輕則打亂呼吸，重則倒地久久站不起來。
+            在進行腹部攻擊時，先設置一個攻擊吸引防守後再往另一個方向攻擊
+          </p>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/8ZySG1n.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">下潛勾拳反擊</h3>
+          <p>
+            Tank是很會抓反擊的拳擊手，在第二回合躲過小王子的招牌左勾拳後，一記精準的斜上方的勾拳直接將其擊倒。
+          </p>
+        </div>
+      </div>
+      <div class="row free-article p-3">
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/ImUgDhG.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">側閃前上勾拳反擊</h3>
+          <p>
+            除了比較常見的閃躲後用直拳反擊，上勾拳也是一個可以嘗試的思路。
+            不過最重要的還是洞悉對手的防守動作，去找到出拳的最佳路線。
+          </p>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/J2UGX9y.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">刺拳擊腹set-up</h3>
+          <p>
+            上下組合的攻擊非常容易讓對手的防守鬆懈，尤其加上重心或手上下做假動作，可以很好的迷惑對手。
+          </p>
+        </div>
+        <div class="col-4">
+          <img
+            src="https://i.imgur.com/iaFxAX9.png"
+            alt=""
+            referrerpolicy="no-referrer"
+          />
+          <h3 class="center-text">後手勾拳反擊</h3>
+          <p>
+            在側閃同時帶上全身的體重將拳頭揮出去重擊目標，對於對手動作的預判及時機的掌握難度都十分高，是一項難度很高的技術。
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- 教學文章區塊結束 -->
+
+    <!-- 結尾版權開始 -->
+    <footer class="sb-slide" id="footer-container">
+      <!--Container Starts-->
+      <div class="container p-2">
+        <div class="row text-center d-flex align-items-center">
+          <div class="col-md-4 d-flex">
+            <ul class="foot-link d-flex align-items-center my-auto">
+              <li>
+                <div class="contact-info">
+                  <span class="websit"
+                    ><a href="mailto:service@ufcgym.com.tw">
+                      rexfix2023@gmail.com.tw</a
+                    ></span
+                  >
+                </div>
+              </li>
+              <li><a href="/privacy">IG</a></li>
+              <li><a href="/terms">FB</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <div class="copyright">All Rights Reserved @ Rex瑞氏健身教練</div>
+          </div>
+          <div class="col-md-4">
+            <div class="designedby">
+              Designed by
+              <a href="http://ibiza.com.tw/" target="_blank"
+                >JEFFREY Co., Ltd.</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 結尾版權結束 -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    window.onload = function () {
+      document.querySelector("video").playbackRate = 1.25;
+      console.log("哈窩");
+    };
+
+    $(".hover").mouseleave(function () {
+      $(this).removeClass("hover");
+    });
+  </script>
+</html>
